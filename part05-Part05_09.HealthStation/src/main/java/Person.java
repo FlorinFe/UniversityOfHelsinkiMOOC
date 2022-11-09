@@ -8,12 +8,14 @@ public class Person {
     private int age;
     private int height;
     private int weight;
+    private int weighings = 0;
 
     public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
         this.height = height;
         this.weight = weight;
+        
     }
 
     public void printPerson() {
@@ -41,7 +43,9 @@ public class Person {
     }
 
     public int getWeight() {
+        
         return this.weight;
+        
     }
 
     public void setWeight(int weight) {
