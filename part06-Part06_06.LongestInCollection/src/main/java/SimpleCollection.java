@@ -14,9 +14,25 @@ public class SimpleCollection {
     public void add(String element) {
         this.elements.add(element);
     }
+    public String getName() {
+        return this.name;
+    }
 
     public ArrayList<String> getElements() {
         return this.elements;
     }
+    public String longest(){
+        if (this.elements.isEmpty()) {
+            return null;
+        }
+        String theLongest = this.elements.get(0);
+        
+        for (String oricare : this.elements) {
+            if (theLongest.length() < oricare.length())
+                theLongest = oricare;
+        }
+    return theLongest;
+    
+}
 
 }
